@@ -30,7 +30,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                     $requestedLanguage = $session->language;
                     $locale->setLocale($requestedLanguage);
                 } else {
-                    //$locale->setLocale(Zend_Locale::BROWSER);
                     $locale->setLocale('en');
                     $requestedLanguage = key($locale->getBrowser());
                 }
