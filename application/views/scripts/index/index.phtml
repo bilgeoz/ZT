@@ -1,0 +1,148 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body{
+    background: #ededed;margin:50;padding:0;
+}
+#contentWrap{
+    position:relative;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;padding:0;
+    padding-right:10px;
+    width:800px;
+    height:400px;
+    list-style-type:none;-webkit-border-radius:10px;
+    -moz-border-radius:10px;border-radius:10px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    box-shadow:0 1px 3px rgba(0,0,0,.2);
+    background: #cce197;
+}
+#menu_wrap{    
+    position:relative;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;padding:0;
+    padding-right:10px;
+    width:800px;
+    height:40px;
+    list-style-type:none;-webkit-border-radius:10px;
+    -moz-border-radius:10px;border-radius:10px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,.2);
+    box-shadow:0 1px 3px rgba(0,0,0,.2)
+}
+.button a{
+    cursor:pointer;text-align:center;
+    font:13px/100% Tahoma, Geneva, sans-serif;
+    font-weight:bold;position:relative;
+    min-width:50px;height:20px;float:left;padding:10px;padding-top:10px;
+    padding-bottom:10px;text-decoration:none;
+    text-shadow:0 1px 1px rgba(0,0,0,.3)}
+.button:first-child a{
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-bottom-left-radius:10px;-moz-border-topleft-radius:10px;
+    -moz-border-bottomleft-radius:10px;border-top-left-radius:10;
+    border-bottom-left-radius:10px}
+.l_Green,.l_Green .button a{
+    color: #ffffef;background: #cce197;border-right: 1px solid #7ead6b;
+    background: -moz-linear-gradient(top, #cce197 0%, #7ead6b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cce197),color-stop(100%,#7ead6b));
+    background: -webkit-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -o-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    background: -ms-linear-gradient(top, #cce197 0%,#7ead6b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce197', endColorstr='#7ead6b',GradientType=0 );
+    background: linear-gradient(top, #cce197 0%,#7ead6b 100%);}
+.l_Green .button a:hover,.l_Green .button a:focus{
+    background: rgb(204,225,151);
+    background: -moz-linear-gradient(top, rgba(204,225,151,1) 0%, rgba(194,215,141,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,225,151,1)), color-stop(100%,rgba(194,215,141,1)));
+    background: -webkit-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -o-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    background: -ms-linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce197', endColorstr='#c2d78d',GradientType=0 );
+    background: linear-gradient(top, rgba(204,225,151,1) 0%,rgba(194,215,141,1) 100%);
+}
+.l_Green .button a:active{	
+    background: rgb(194,215,141);
+    background: -moz-linear-gradient(top, rgba(194,215,141,1) 0%, rgba(204,225,151,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(194,215,141,1)), color-stop(100%,rgba(204,225,151,1)));
+    background: -webkit-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -o-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    background: -ms-linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2d78d', endColorstr='#cce197',GradientType=0 );
+    background: linear-gradient(top, rgba(194,215,141,1) 0%,rgba(204,225,151,1) 100%);
+}
+.search{
+    position:relative;float:right;margin-top:10px;
+}
+.search input[type=text]{
+    width:120px;height:20px;padding-left:18px;
+    margin-left:10px;padding-right:4px;outline:none;border: none;
+    -webkit-border-radius: 20px; -moz-border-radius: 20px;
+    border-radius: 20px;-moz-box-shadow: inset 1px 1px 3px #7a7a7a;
+    box-shadow: inset 1px 1px 3px #7a7a7a;
+}
+.search a:before {
+    width:6px;height:6px;border:2px solid  #000;
+    background:transparent;-webkit-border-radius:12px;
+    -moz-border-radius:12px;border-radius:12px;
+}
+.search a:after {
+    left:24px;width:2px;height:7px;margin-top:0;
+    -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+li a:before, li a:after {
+    content:"";position:absolute;top:50%;left:15px;
+}
+li a:before, li a:after {
+    margin:-7px 0 0;background: #000;
+}
+#langPanel{
+    position: relative;
+    right:10px;
+    padding:10px 10px 0px 0px;
+    padding-right: 5px;
+    float: right;
+    font-family:DroidSerifItalic;
+    color: #6b6b6b;
+    text-decoration:none;
+    font-size:11px;
+}
+#langPanel a{
+    font-family:DroidSerifItalic;
+    color: #6b6b6b;
+    text-decoration:none;
+    font-size: 11px;
+}
+        </style>
+    </head>
+    <body>
+        <ul id="menu_wrap" class="l_Green">
+            <li class="button"><a href="#"><?= $this->translate('__HOME__'); ?></a></li>
+            <li class="button"><a href="#"><?= $this->translate('__ABOUT__'); ?></a></li>
+            <li class="button"><a href="#"><?= $this->translate('__SERVICES__'); ?></a></li>
+            <li class="button"><a href="#"><?= $this->translate('__PORTFOLIO__'); ?></a></li>
+            <li class="search">
+                <a href="#"></a><input type="text" placeHolder="<?= $this->translate('__SEARCH__'); ?>" />
+            </li>
+        </ul>
+        <div id="contentWrap">
+            <div id="langPanel">
+                <a href="<?=$this->url(array('controller' => 'switch','action' => 'switch','lang' => 'en'));?>"><?= $this->translate('__LANG_EN__'); ?></a> | 
+                <a href="<?=$this->url(array('controller' => 'switch','action' => 'switch','lang' => 'tr'));?>"><?= $this->translate('__LANG_TR__'); ?></a>
+            </div>
+            <div id="content">
+                
+            </div>
+            <div id="side">
+                
+            </div>
+        </div>
+    </body>
+</html>
